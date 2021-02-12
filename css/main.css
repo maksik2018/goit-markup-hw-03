@@ -11,6 +11,7 @@
 
 .hero {
   background-color: var(--bg-black);
+  /* height: 600px; */
 }
 
 .hero-header {
@@ -21,7 +22,7 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--primary-white);
-}
+ }
 
 .btn {
   background-color: var(--primary-blue);
@@ -32,6 +33,78 @@
   text-align: center;
   letter-spacing: 0.06em;
 }
+/* advantages */
+
+.adv-list {
+  display: flex;
+  padding: 0;
+  margin-top: 94px;
+  margin-bottom: 94px;
+  
+}
+
+.adv-list li {
+  width: calc(100% / 4);
+  margin-right: 30px;
+
+}
+
+.adv-list li:last-child {
+
+  margin-right: 0px;
+
+}
+
+/* task */
+.task-list  {
+  display: flex; 
+  padding: 0;
+
+}
+
+.task-list li {
+  width: calc(100% / 3);
+  margin-right: 30px;
+  margin-bottom: 94px;
+}
+
+.task-list li:last-child {
+
+  margin-right: 0px;
+
+}
+
+.task-list {
+  padding-top: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* team */
+.team.title {
+  padding-top: 94px;
+}
+
+.team-list {
+  display: flex;
+  padding: 0;
+  margin-bottom: 94px;
+ }
+
+  .team-list li {
+   width: calc(100% / 4);
+   margin-right: 30px;
+ }
+
+   .team-list li:last-child {
+    margin-right: 0;
+ }
+
+
 
 .title {
   font-weight: bold;
@@ -39,6 +112,7 @@
   line-height: 1.2;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
 }
 
 .pretitle {
@@ -47,7 +121,7 @@
   line-height: 1.1;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-}
+  }
 
 .team {
   background-color: var(--bg-sect-white);
@@ -67,7 +141,7 @@
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: var(--main-text-grey);
-}
+  }
 
 .position {
   font-weight: normal;
