@@ -9,12 +9,28 @@
   --ftr-text-grey-op60: rgba(255, 255, 255, 0.6);
 }
 
-.hero {
-  background-color: var(--bg-black);
-  /* height: 600px; */
+ul {
+  margin: 0;
+  padding: 0;
+
 }
 
-.hero-header {
+/* section hero */
+
+.hero {
+  background-color: var(--bg-black);
+}
+
+.hero .container { 
+  padding-top: 200px;
+  padding-bottom: 200px;
+  min-height: 600px;
+  text-align: center;
+  
+}
+
+
+.hero-title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.4;
@@ -22,7 +38,8 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--primary-white);
- }
+  display: block;
+}
 
 .btn {
   background-color: var(--primary-blue);
@@ -32,15 +49,23 @@
   line-height: 1.9;
   text-align: center;
   letter-spacing: 0.06em;
+  display: inline-block;
+  padding: 10px 32px;
+  margin-top: 30px;
+  border-radius: 4px;
 }
+
 /* advantages */
+.advantages {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
 .adv-list {
   display: flex;
   padding: 0;
-  margin-top: 94px;
-  margin-bottom: 94px;
-  
+  margin: 0;
+    
 }
 
 .adv-list li {
@@ -55,6 +80,35 @@
 
 }
 
+.adv-list .pretitle {
+  padding-bottom: 10px;
+}
+
+.advantages-text {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: var(--main-text-grey);
+}
+
+.title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+
+.pretitle {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
 /* task */
 .task-list  {
   display: flex; 
@@ -65,7 +119,7 @@
 .task-list li {
   width: calc(100% / 3);
   margin-right: 30px;
-  margin-bottom: 94px;
+  
 }
 
 .task-list li:last-child {
@@ -84,47 +138,33 @@ img {
   height: auto;
 }
 
+.task {
+  padding-bottom: 94px;
+}
+
 /* team */
-.team.title {
+.team {
+  background-color: var(--bg-sect-white);
+}
+
+.team .container {
   padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .team-list {
   display: flex;
   padding: 0;
-  margin-bottom: 94px;
- }
-
-  .team-list li {
-   width: calc(100% / 4);
-   margin-right: 30px;
- }
-
-   .team-list li:last-child {
-    margin-right: 0;
- }
-
-
-
-.title {
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 1.2;
-  text-align: center;
-  letter-spacing: 0.03em;
-  margin-bottom: 50px;
+  margin: 0;
 }
 
-.pretitle {
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 1.1;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  }
+.team-list li {
+  width: calc(100% / 4);
+  margin-right: 30px;
+}
 
-.team {
-  background-color: var(--bg-sect-white);
+.team-list li:last-child {
+  margin-right: 0;
 }
 
 .team-pretitle {
@@ -133,15 +173,10 @@ img {
   line-height: 1.2;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 
-.advantages-text {
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
-  color: var(--main-text-grey);
-  }
 
 .position {
   font-weight: normal;
@@ -150,4 +185,5 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-text-grey);
+  margin-bottom: 30px;
 }
