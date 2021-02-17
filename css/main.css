@@ -39,7 +39,7 @@ ul {
   text-transform: uppercase;
   color: var(--primary-white);
   display: block;
-}
+  }
 
 .btn {
   background-color: var(--primary-blue);
